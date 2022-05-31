@@ -1,5 +1,16 @@
 # Template Node (BackEnd)
 
+- install dep using 
+
+        npm i
+- Then for prod
+
+        npm run prod
+
+- For dev
+
+        npm run dev
+
 - add the config file in your .gitignore
 - customize the models, routes, controllers accordingly
 
