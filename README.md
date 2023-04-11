@@ -1,54 +1,51 @@
 # Template Node (BackEnd)
 
-- install dep using 
+- install dependencies
 
         npm i
-- Then for prod
+
+- Run as Production Server
 
         npm run prod
 
-- For dev
+- Run as Development Server
 
         npm run dev
 
 - add the config file in your .gitignore
-- customize the models, routes, controllers accordingly
+- customize the models, routes, controllers
 
-## create person resource
+## person resource
 
 ### method type : post
 
-    http://localhost:4000/person
+    http://localhost:5000/person
     
     { 
     "name": "name",
     "email": "email@gmail.com",
-    "number": "03003456505",
-    "city" : "sukuer"
+    "number": "+9231312121",
+    "city" : "ABC"
     
     }
 
-### method type : Get 
-    http://localhost:4000/person
+### method type : Get
 
+    http://localhost:5000/person
 
 ### method type : put
 
-    http://localhost:4000/person
+    http://localhost:5000/person
     
     { 
     "name2": "updated Name"
     "name": "name",
     "email": "email@gmail.com",
-    "number": "03003456505",
-    "city" : "sukuer"
+    "number": "+9231312121",
+    "city" : "ABC"
     
     }
+
 ### method type : delete
 
-    http://localhost:4000/person/name
-### method type : delete
-
-    http://localhost:4000/personByName/name
-
-### creted for Dot-project
+    http://localhost:5000/person/name
