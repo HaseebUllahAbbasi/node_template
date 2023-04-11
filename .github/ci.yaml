@@ -1,0 +1,19 @@
+name: Release Template
+
+permissions:
+  contents: write
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - development
+
+jobs:
+  build:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
